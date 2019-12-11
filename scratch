@@ -1,0 +1,64 @@
+def print_first_directors_movie_titles
+  counter = 0
+  while counter < directors_database[0][:movies].length do
+    puts directors_database[0][:movies][counter][:title]
+    counter += 1
+  end
+end
+
+def directors_totals(nds)
+
+{:name=>"Francis Ford Coppola",
+  :movies=>
+   [{:title=>"The Godfather",
+     :studio=>"Paramount",
+     :worldwide_gross=>134966411,
+     :release_year=>1972},
+    {:title=>"Apocalypse Now",
+     :studio=>"MGM",
+     :worldwide_gross=>83471511,
+     :release_year=>1979},
+    {:title=>"Apocalypse Now Redux",
+     :studio=>"Miramax",
+     :worldwide_gross=>83471511,
+     :release_year=>2001},
+    {:title=>"Bram Stoker's Dracula",
+     :studio=>"Columbia",
+     :worldwide_gross=>82522790,
+     :release_year=>1992},
+    {:title=>"The Godfather Part III",
+     :studio=>"Paramount",
+     :worldwide_gross=>66666062,
+     :release_year=>1990},
+    {:title=>"Jack",
+     :studio=>"Buena Vista",
+     :worldwide_gross=>58620973,
+     :release_year=>1996}]}]
+
+     =begin
+     --------------------------------------------------------------------------------
+
+     def directors_totals(nds)
+       counter = 0
+       while counter < directors_database.length do
+         puts directors_database[0][:movies][counter][:worldwide_gross]
+         counter += 1
+       end
+       # Remember, it's always OK to pretty print what you get *in* to make sure
+       # that you know what you're starting with!
+       #
+       #
+       # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
+       result = {
+       }
+       #
+       # Use loops, variables and the accessing method, [], to loop through the NDS
+       # and total up all the
+       # ...
+       # ...
+       # ...
+       #
+       #
+       # Be sure to return the result at the end!
+       nil
+     end
