@@ -18,5 +18,27 @@ def directors_totals(nds)
   #
   #
   # Be sure to return the result at the end!
-  nil
+  row_index = 0 
+  def get_hash_by_name()
+    
+end
+director_total = 0 
+director_index = {}
+  while row_index < nds.length do 
+    column_index = 0 
+    
+    while column_index <  nds[row_index][:movies].length do 
+    director_total += nds[row_index][:movies][column_index][:worldwide_gross]
+    column_index += 1 
+  end
+  director_index[nds[row_index][:name]] = director_total
+   row_index += 1
+   director_total = 0 
+end
+return director_index
+  
+  
+  
+  
+  
 end
