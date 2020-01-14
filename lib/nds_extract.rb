@@ -3,7 +3,6 @@ require 'directors_database'
 # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
  
 def directors_totals(nds)
-  pp nds[0][:movies][1][:worldwide_gross]
   result = Hash.new
   director = 0
   for director in 0...nds.length do
